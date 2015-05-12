@@ -1,0 +1,8 @@
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\Teste-LeanWork\bin\Debug\Teste-LeanWork.exe.config
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\Teste-LeanWork\bin\Debug\Teste-LeanWork.exe
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\Teste-LeanWork\bin\Debug\Teste-LeanWork.pdb
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\Teste-LeanWork\bin\Debug\CreditCardValidator.dll
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\Teste-LeanWork\bin\Debug\CreditCardValidator.pdb
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\Teste-LeanWork\obj\Debug\Teste-LeanWork.csprojResolveAssemblyReference.cache
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\Teste-LeanWork\obj\Debug\Teste-LeanWork.exe
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\Teste-LeanWork\obj\Debug\Teste-LeanWork.pdb

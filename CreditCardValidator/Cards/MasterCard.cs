@@ -22,6 +22,12 @@ namespace CreditCardValidator.Cards
         public override bool Validate(long number)
         {
             var textNumber = number.ToString();
+            
+            if (textNumber.Length < 2)
+            {
+                return false;
+            }
+
             var twoFirstNumbers = int.Parse(textNumber.Substring(0, 2));
 
             if ((textNumber.Length == 16) && (twoFirstNumbers >= 51 && twoFirstNumbers <= 55))

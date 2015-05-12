@@ -1,0 +1,4 @@
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\CreditCardValidator\bin\Debug\CreditCardValidator.dll
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\CreditCardValidator\bin\Debug\CreditCardValidator.pdb
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\CreditCardValidator\obj\Debug\CreditCardValidator.dll
+c:\users\murilo\documents\visual studio 2013\Projects\Teste-LeanWork\CreditCardValidator\obj\Debug\CreditCardValidator.pdb
