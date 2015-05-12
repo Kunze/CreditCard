@@ -77,7 +77,7 @@ namespace CreditCardValidator.Cards
         /// </summary>
         /// <param name="values">Lista de valores a serem somados</param>
         /// <returns>Soma de todos os números</returns>
-        public int SumValues(IEnumerable<int> values)
+        private int SumValues(IEnumerable<int> values)
         {
             return values.Aggregate((sum, next) => sum += next);
         }
