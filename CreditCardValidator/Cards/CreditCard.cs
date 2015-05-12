@@ -10,7 +10,7 @@ namespace CreditCardValidator.Cards
 {
     public abstract class CreditCard : ICreditCardValidator
     {
-        private string _creditCardName;
+        private readonly string _creditCardName;
 
         public CreditCard(string creditCardName)
         {
