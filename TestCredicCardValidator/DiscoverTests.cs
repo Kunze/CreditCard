@@ -37,7 +37,7 @@ namespace TestCredicCardValidator
                 6011603380558295
             };
 
-            cards.ForEach(i => Assert.IsTrue(validator.Validate(i)));
+            cards.ForEach(i => validator.Validate(i));
         }
     }
 }
