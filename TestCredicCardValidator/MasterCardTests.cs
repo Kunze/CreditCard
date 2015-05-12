@@ -27,7 +27,6 @@ namespace TestCredicCardValidator
         }
 
         [TestMethod]
-        [ExpectedException(typeof(InvalidCreditCardException))]
         public void ShouldBeAInvalidMasterCard()
         {
             var validator = new MasterCard();
@@ -40,7 +39,18 @@ namespace TestCredicCardValidator
                 5224309128575138
             };
 
-            cards.ForEach(i => validator.Validate(i));
+            try
+            {
+                cards.ForEach(i =>
+                {
+                    validator.Validate(i);
+                    Assert.Fail();
+                });
+            }
+            catch (InvalidCreditCardException ex)
+            {
+
+            }
         }
     }
 }
