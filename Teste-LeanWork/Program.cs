@@ -73,10 +73,11 @@ namespace Teste_LeanWork
 
         static void Write(string message)
         {
-            Console.WriteLine(new String('-', 50));
-            Console.WriteLine(message);
+            var separator = new String('-', 50);
 
-            Console.WriteLine(new String('-', 50));
+            Console.WriteLine(separator);
+            Console.WriteLine(message);
+            Console.WriteLine(separator);
         }
     }
 }
