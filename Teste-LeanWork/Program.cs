@@ -3,10 +3,7 @@ using CreditCardValidator.Cards.Interfaces;
 using CreditCardValidator.Exceptions;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Teste_LeanWork
 {
@@ -16,11 +13,13 @@ namespace Teste_LeanWork
 
         static void Main(string[] args)
         {
-            var validators = new List<ICreditCardValidator>();
-            validators.Add(new MasterCard());
-            validators.Add(new AMEX());
-            validators.Add(new Visa());
-            validators.Add(new Discover());
+            var validators = new List<ICreditCardValidator>
+            {
+                new MasterCard(), 
+                new AMEX(), 
+                new Visa(), 
+                new Discover()
+            };
 
             string input;
 
