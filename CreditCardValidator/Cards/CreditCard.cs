@@ -19,7 +19,7 @@ namespace CreditCardValidator.Cards
             get { return _creditCardName; }
         }
 
-        public abstract bool Validate(long number);
+        protected internal abstract bool IsValid(long number);
 
         /// <summary>
         /// Verifica se o número é par
@@ -56,9 +56,8 @@ namespace CreditCardValidator.Cards
         /// </summary>
         /// <param name="reversedNumbers">Números que seram dobrados</param>
         /// <returns>Lista com os números dobrados</returns>
-        private static List<int> Double(IReadOnlyList<int> reversedNumbers)
+        private static IEnumerable<int> Double(IReadOnlyList<int> reversedNumbers)
         {
-            var reversedNumbersWithDoubledValues = new List<int>();
             for (var i = 0; i < reversedNumbers.Count; i++)
             {
                 var reversedNumber = reversedNumbers[i];
@@ -71,18 +70,21 @@ namespace CreditCardValidator.Cards
                     reversedNumber = (doubledNumber > 9 ? doubledNumber - 9 : doubledNumber);
                 }
 
-                reversedNumbersWithDoubledValues.Add(reversedNumber);
+                yield return reversedNumber;
             }
-
-            return reversedNumbersWithDoubledValues;
         }
         /// <summary>
         /// Verifica se um número de cartão é válido seguindo a regra http://rosettacode.org/wiki/Luhn_test_of_credit_card_numbers
         /// </summary>
         /// <param name="cardNumber"></param>
         /// <returns>Verdadeiro se for válido</returns>
-        protected bool IsValid(long cardNumber)
+        public bool Validate(long cardNumber)
         {
+            if (!IsValid(cardNumber))
+            {
+                return false;
+            }
+
             var reversedNumbers = ReverseNumbers(cardNumber);
             var reversedNumbersWithDoubledValues = Double(reversedNumbers);
 
