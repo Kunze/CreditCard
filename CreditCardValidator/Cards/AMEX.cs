@@ -1,6 +1,6 @@
 ﻿namespace CreditCardValidator.Cards
 {
-    public class AMEX: CreditCard
+    public sealed class AMEX: CreditCard
     {
         public AMEX()
             : base("AMEX")

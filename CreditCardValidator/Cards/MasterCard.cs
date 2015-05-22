@@ -1,6 +1,6 @@
 ﻿namespace CreditCardValidator.Cards
 {
-    public class MasterCard : CreditCard
+    public sealed class MasterCard : CreditCard
     {
         public MasterCard()
             : base("MasterCard")

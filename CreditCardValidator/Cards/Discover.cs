@@ -1,6 +1,6 @@
 ﻿namespace CreditCardValidator.Cards
 {
-    public class Discover : CreditCard
+    public sealed class Discover : CreditCard
     {
         public Discover()
             : base("Discover")
