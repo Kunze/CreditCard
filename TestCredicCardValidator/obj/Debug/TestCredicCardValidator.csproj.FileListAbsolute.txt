@@ -1,0 +1,7 @@
+C:\Users\Murilo\documents\visual studio 2013\Projects\Teste-LeanWork\TestCredicCardValidator\bin\Debug\TestCredicCardValidator.dll
+C:\Users\Murilo\documents\visual studio 2013\Projects\Teste-LeanWork\TestCredicCardValidator\bin\Debug\TestCredicCardValidator.pdb
+C:\Users\Murilo\documents\visual studio 2013\Projects\Teste-LeanWork\TestCredicCardValidator\bin\Debug\CreditCardValidator.dll
+C:\Users\Murilo\documents\visual studio 2013\Projects\Teste-LeanWork\TestCredicCardValidator\bin\Debug\CreditCardValidator.pdb
+C:\Users\Murilo\documents\visual studio 2013\Projects\Teste-LeanWork\TestCredicCardValidator\obj\Debug\TestCredicCardValidator.csprojResolveAssemblyReference.cache
+C:\Users\Murilo\documents\visual studio 2013\Projects\Teste-LeanWork\TestCredicCardValidator\obj\Debug\TestCredicCardValidator.dll
+C:\Users\Murilo\documents\visual studio 2013\Projects\Teste-LeanWork\TestCredicCardValidator\obj\Debug\TestCredicCardValidator.pdb

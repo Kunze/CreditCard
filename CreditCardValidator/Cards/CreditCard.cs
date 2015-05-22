@@ -19,7 +19,7 @@ namespace CreditCardValidator.Cards
             get { return _creditCardName; }
         }
 
-        protected internal abstract bool IsValid(long number);
+        protected abstract bool IsValid(long number);
 
         /// <summary>
         /// Verifica se o número é par

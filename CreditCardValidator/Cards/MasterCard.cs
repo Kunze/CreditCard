@@ -13,7 +13,7 @@
         /// </summary>
         /// <param name="number">Número a ser verificado</param>
         /// <returns>Verdadeiro se for válido</returns>
-        protected internal override bool IsValid(long number)
+        protected override bool IsValid(long number)
         {
             var textNumber = number.ToString();
             
