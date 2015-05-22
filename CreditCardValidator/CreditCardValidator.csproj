@@ -46,7 +46,9 @@
     <Compile Include="Cards\Visa.cs" />
     <Compile Include="Exceptions\InvalidCreditCardException.cs" />
     <Compile Include="Cards\Interfaces\ICreditCardValidator.cs" />
+    <Compile Include="Exceptions\UnknowCreditCardException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CreditCardValidatorService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

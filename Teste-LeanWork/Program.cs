@@ -1,9 +1,7 @@
-﻿using CreditCardValidator.Cards;
-using CreditCardValidator.Cards.Interfaces;
-using CreditCardValidator.Exceptions;
+﻿using CreditCardValidator.Exceptions;
 using System;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using CreditCardValidator.Services;
 
 namespace Teste_LeanWork
 {
@@ -13,13 +11,7 @@ namespace Teste_LeanWork
 
         static void Main(string[] args)
         {
-            var validators = new List<ICreditCardValidator>
-            {
-                new MasterCard(), 
-                new AMEX(), 
-                new Visa(), 
-                new Discover()
-            };
+            var creditCardValidator = new CreditCardValidatorService();
 
             string input;
 
@@ -35,28 +27,17 @@ namespace Teste_LeanWork
                     continue;
                 }
 
-                var unknow = true;
-
-                foreach (var validator in validators)
+                try
                 {
-                    try
-                    {
-                        if (validator.Validate(cardNumber))
-                        {
-                            Write(string.Format("{0}: {1} (válido)", validator.CreditCardType, cardNumber));
-                            unknow = false;
-                            break;
-                        }
-                    }
-                    catch (InvalidCreditCardException ex)
-                    {
-                        Write(ex.Message);
-                        unknow = false;
-                        break;
-                    }
-                }
+                    var validator = creditCardValidator.GetValidator(cardNumber);
 
-                if (unknow)
+                    Write(string.Format("{0}: {1} (válido)", validator.CreditCardType, cardNumber));
+                }
+                catch (InvalidCreditCardException ex)
+                {
+                    Write(ex.Message);
+                }
+                catch (UnknowCreditCardException ex)
                 {
                     Write(string.Format("Desconhecido: {0} (inválido)", cardNumber));
                 }
